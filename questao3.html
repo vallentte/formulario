@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<p>3º Pergunta: Qual a linha evolutiva do Kangaskhan</p><br>
+
+<form action="">
+    <input type="radio" id="alternativa1" name="alternativa" value="alternativa1">
+    <label for="html">Cubone, Marowak, Kangaskhan</label><br><br>
+    <input type="radio" id="alternativa2" name="alternativa" value="alternativa2">
+    <label for="css">Kangaskhan, Charmander, Charmeleon e Charizard</label><br><br>
+    <input type="radio" id="alternativa3" name="alternativa" value="alternativa3">
+    <label for="javascript">Ele não têm linha evolutiva</label><br><br>
+    <input type="button" onclick="ChecarResposta()" value="Checar Resposta">
+
+</form>
+
+<script>
+function ChecarResposta(){
+    const alternativaCorreta = "alternativa3"
+const opcaoEscolhida = document.querySelector ('input[name="alternativa"]:checked')
+if(opcaoEscolhida){
+if(opcaoEscolhida.value === alternativaCorreta){
+alert("Resposta Correta")
+  }else{
+alert("Escolheu a alternativa errada")
+  }
+  }else{
+alert("Escolha uma alternatica")
+  }
+}
+</script>
+
+</body>
+</html>

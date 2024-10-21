@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<p>2º Pergunta: Qual a linha evolutiva do Squirtle</p><br>
+
+<form action="">
+    <input type="radio" id="alternativa1" name="alternativa" value="alternativa1">
+    <label for="html">Squirtle, Croconaw e Feraligatr</label><br><br>
+    <input type="radio" id="alternativa2" name="alternativa" value="alternativa2">
+    <label for="css">Squirtle, Wartortle e Blastoise</label><br><br>
+    <input type="radio" id="alternativa3" name="alternativa" value="alternativa3">
+    <label for="javascript">Ele não têm linha evolutiva</label><br><br>
+    <input type="button" onclick="ChecarResposta()" value="Checar Resposta">
+
+</form>
+
+<script>
+function ChecarResposta(){
+    const alternativaCorreta = "alternativa2"
+const opcaoEscolhida = document.querySelector ('input[name="alternativa"]:checked')
+if(opcaoEscolhida){
+if(opcaoEscolhida.value === alternativaCorreta){
+alert("Resposta Correta")
+window.location.href = ("questao3.html")
+  }else{
+alert("Escolheu a alternativa errada")
+  }
+  }else{
+alert("Escolha uma alternatica")
+  }
+}
+</script>
+
+</body>
+</html>
